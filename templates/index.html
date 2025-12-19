@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSCI210 Final Project - RPS Tournament</title>
+</head>
+<body>
+  <h1>Rock Paper Scissors Tournament</h1>
+  <p>Student: Huseyin Barut</p>
+
+  <h3>Players</h3>
+  <label>
+    Player 1 (retained winner):
+    <input id="p1" type="text" placeholder="Player 1 name" />
+  </label>
+  <br /><br />
+  <label>
+    Player 2 (new opponent):
+    <input id="p2" type="text" placeholder="Player 2 name" />
+  </label>
+
+  <br /><br />
+  <button id="startBtn">Start Match</button>
+  <button id="playBtn" disabled>Play 10 Rounds</button>
+
+  <p id="status"></p>
+  <pre id="gameResult"></pre>
+
+  <h3>Leaderboard (By Name)</h3>
+  <pre id="lbName"></pre>
+
+  <h3>Leaderboard (By Score)</h3>
+  <pre id="lbScore"></pre>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
